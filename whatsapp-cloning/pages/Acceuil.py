@@ -4,6 +4,7 @@ from flet import *
 
 
 class Acceuil:
+
     def __init__(self, page: Page):
         self.page = page
         self.page.bgcolor = "black"
@@ -56,10 +57,10 @@ class Acceuil:
 
 
     def create_image(self):
-        image_path = "/Users/misterpy/Desktop/Trainning-Flet/whatsapp-cloning/assets/icons/Acceuil.png"
+        image_path = "../assets/icons/Acceuil.png"
 
         if os.path.exists(image_path):
-
+            print(f"Image Trouver a l'emplafement {image_path}")
             return Row(
                 alignment='center', controls=[
                     Image(src=image_path, width=350, height=250)
